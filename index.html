@@ -30,7 +30,7 @@
             <h5 class="info">Todas las opciones para escoger</h5>
         </div>
         <div id="contenedor-boton">
-            <button id="boton-primer-pedido">Haz tu pedido ya</button>
+            <button id="boton-primer-pedido" onclick="landingPage()">Haz tu pedido ya</button>
         </div>
 
         <div style="display: grid; grid-template-columns: 1fr; justify-items: center; margin-bottom: 80px;"  >
@@ -71,10 +71,10 @@
 
         <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 120px;">
             <h6 class="informacion-inicio-sesion">Correo Electrónico</h6>
-            <input class="input-inicio-sesion" type="text">
+            <input id="email" class="input-inicio-sesion" type="text">
             <h6 style="margin-top: 15px;" class="informacion-inicio-sesion">Contraseña</h6>
-            <input class="input-inicio-sesion" type="password">
-            <button id="boton-inicio-sesion">Ingresar</button>
+            <input id="contrasena" class="input-inicio-sesion" type="password">
+            <button id="boton-inicio-sesion" onclick="validarFormulario()">Ingresar</button>
 
             <div id="contenerdor-no-cuenta">
                 <a id="no-cuenta">¿No tienes Cuenta?</a>

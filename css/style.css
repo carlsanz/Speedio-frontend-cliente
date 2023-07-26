@@ -10,7 +10,7 @@ body {
 }
 
 #lading-page {
-    display: none;
+    display: block;
 }
 
 #contenedor-nombre-empresa {
@@ -155,7 +155,7 @@ body {
 
 /* restaurantes */
 #restaurantes {
-    display: block;
+    display: none;
 }
 
 #restaurantes-categorias {
