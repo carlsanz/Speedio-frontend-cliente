@@ -1,0 +1,226 @@
+
+
+body {
+    background-color: #FFE226;
+    font-family: 'Manrope', sans-serif;
+    color: #0B3A56;
+    font-weight: bolder;
+    margin: 0;
+    
+}
+
+#lading-page {
+    display: none;
+}
+
+#contenedor-nombre-empresa {
+    display: flex;
+    flex-direction: column;
+
+}
+#nombre-empresa {
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+#eslogan {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+#logo {
+    width: 10rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pizza-login {
+    width: 40px;
+}
+
+.especificaciones {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.info {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+#contenedor-boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+}
+#boton-primer-pedido {
+    width: 15rem;
+    height: 2.5rem;
+    background-color: #C6382C;
+    color: #ffffff;
+    border: 2px solid #0B3A56;
+    border-radius: 10px;
+}
+.informacion-empresa {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.parrafo-info-empresa {
+    margin-left: 10px;
+    
+}
+/* footer */
+.fa-brands {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+#footer {
+    position: absolute;
+    bottom:auto;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+/* inicio de sesion */
+#inicio-sesión {
+    display: none;
+}
+
+.icono-regreso {
+    font-size: 43px;
+    margin-top: 25px;
+    margin-left: 20px;
+    position: absolute;
+} 
+
+.informacion-inicio-sesion {
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.input-inicio-sesion {
+    width: 270px;
+    height: 35px;
+    border-radius: 5px;
+    border: #0B3A56 2px solid;
+}
+#boton-inicio-sesion {
+    margin-top: 35px;
+    font-size: 22px;
+    width: 270px;
+    height: 45px;
+    background-color: #C6382C;
+    color: #ffffff;
+    border: 2px #0B3A56 solid;
+    border-radius: 10px;
+}
+  
+#contenerdor-no-cuenta {
+    display: flex;
+    align-items: center;
+    width: 270px;
+}
+
+#no-cuenta {
+    margin-top: 1px;
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
+/* registrate */
+#registrarte {
+    display: none;
+}
+#logo-registro {
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* restaurantes */
+#restaurantes {
+    display: block;
+}
+
+#restaurantes-categorias {
+    display: flex;
+    flex-direction:column;
+   align-items: center;
+   margin-top: 10px;
+   
+}
+
+#restaurantes-info {
+    background-color: #C6382C;
+   width: 230px;
+   height: 35px;
+   border-radius: 10px;
+   border: 2px solid #0B3A56;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+#parrafo-restaurantes {
+    color:#0B3A56;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+#contenedor-restaurantes {
+    display: flex;
+}
+
+#restaurante {
+    flex: 1;
+    border: 2px solid #0B3A56;
+    margin: 15px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#footer-2 {
+    position: absolute;
+    bottom: 0;
+}
+/* menú */
+.fa-solid {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+#menu {
+    position: fixed;
+    bottom: 0;    
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+
+
+
+  
