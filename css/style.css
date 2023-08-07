@@ -2,7 +2,7 @@
 
 body {
     background-color: #FFE226;
-    font-family: 'Manrope', sans-serif;
+    font-family:sans-serif;
     color: #0B3A56;
     font-weight: bolder;
     margin: 0;
@@ -10,7 +10,7 @@ body {
 }
 
 #lading-page {
-    display: block;
+    display: block; /*cambiar luego*/
 }
 
 #contenedor-nombre-empresa {
@@ -102,7 +102,7 @@ body {
 }
 
 .icono-regreso {
-    font-size: 43px;
+    font-size: 43px!important;
     margin-top: 25px;
     margin-left: 20px;
     position: absolute;
@@ -185,10 +185,12 @@ body {
 }
 
 #contenedor-restaurantes {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
 }
 
-#restaurante {
+.restaurante {
     flex: 1;
     border: 2px solid #0B3A56;
     margin: 15px;
@@ -219,7 +221,76 @@ body {
     justify-content: space-around;
     align-items: flex-start;
   }
+/* restaurante individual */
+  #restaurante-individual {
+    display: none;
+  }
+#contenedor-menus {
+    margin: 10px 20px 10px 20px;
+    margin-bottom: 100px;
+    
+}
 
+#menu-individual {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #0B3A56;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#contenedor-imagen-menu {
+    border: 2px solid #0B3A56;
+   border-radius: 5px;
+    margin: 5px 0 5px 5px;
+}
+#contenedor-productos-individuales {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: center;
+    width: 100%;
+}
+#nombre-producto {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    font-size: 0.9rem;
+}
+#descripcion-producto {
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+#precio-producto {
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+#boton-producto {
+    background-color: #C6382C;
+    border: 1px solid #0B3A56;
+    border-radius: 5px;
+    height: 30px;
+    margin: 0 10px 5px 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#contenedor-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 
 
