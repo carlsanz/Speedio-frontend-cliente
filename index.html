@@ -31,14 +31,14 @@
             <button id="boton-primer-pedido" onclick="landingPage()">Haz tu pedido ya</button>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr; justify-items: center; margin-bottom: 80px;"  >
-            <div class="informacion-empresa">
+        <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 25px;"  >
+            <div  class="informacion-empresa">
                 <i class="fa-solid fa-phone"></i>
-                <p class="parrafo-info-empresa">957455</p>
+                <p class="parrafo-info-empresa">9574-5549</p>
             </div>
             <div class="informacion-empresa">
-                <i class="fa-solid fa-envelope"></i>
-            <p class="parrafo-info-empresa">hadhadab</p>
+                <i  class="fa-solid fa-envelope"></i>
+            <p class="parrafo-info-empresa">speddio@gmail.com</p>
             </div>
             <div class="informacion-empresa">
                 <i class="fa-solid fa-clock"></i>
@@ -95,7 +95,7 @@
             <h3 id="eslogan">Always on time</h3>
         </div>
 
-        <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 120px;">
+        <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 50px;">
             <h6 style="margin-top: 0px;" class="informacion-inicio-sesion">Nombres</h6>
             <input class="input-inicio-sesion" type="text">
 
@@ -139,42 +139,14 @@
         </div>
 
         <div id="contenedor-restaurantes">
-            <!-- <div id="restaurante">
-                <img src="/img/burger-king.png" alt="">
-            </div>
-
-            <div id="restaurante">
-                <img src="/img/coco-baleadas.png" alt="">
-            </div> -->
+         <!--javascript  -->
         </div>
-
-        <!-- <div id="contenedor-restaurantes">
-            <div id="restaurante">
-                <img src="/img/wendys.png" alt="">
-            </div>
-    
-            <div id="restaurante">
-                <img src="/img/little-caesars.png" alt="">
-            </div>    
-        </div>
-
-        <div style="margin-bottom: 100px;" id="contenedor-restaurantes">
-            <div id="restaurante">
-                <img src="/img/churchs.png" alt="">
-            </div>
-    
-            <div id="restaurante">
-                <img src="/img/bigos.png" alt="">
-            </div>
-        </div>       -->
-        
 
        <footer id="menu">
         <i id="inicio-cambio" class="fa-solid fa-house"></i>
         <i class="fa-solid fa-magnifying-glass"></i>
         <i class="fa-solid fa-cart-shopping"></i>
         </footer>
-        
 
     </section>
    
@@ -196,9 +168,52 @@
         <footer id="menu">
             <i id="" class="fa-solid fa-house"></i>
             <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            </footer>
+            <i class="fa-solid fa-cart-shopping" onclick="carShopping()"></i>
+        </footer>
         
+    </section>
+    <!-- CARRITO DE COMPRAS -->
+
+    <section id="carrito-compras">
+        <div id="contenedor-nombre-empresa">
+            <span><i class="icono-regreso fa-solid fa-angle-left" onclick="ingreso()"></i></span>
+            <h1 id="shooping-car-name">Shopping Car</h1>
+            <span><i id="car-icon" class="fa-solid fa-cart-shopping"></i></span>            
+        </div>
+        
+        <div id="contenedor-menus">
+            <div id="menu-individual">
+                <div id="contenedor-imagen-menu">
+                  <img src="img/super-cheese.png" alt="">
+                </div>
+              <div id="contenedor-productos-individuales">
+                <p id="nombre-producto">Super Cheese</p>
+                <p id="descripcion-producto">Desde: L.209.00</p>
+
+                <div id="cantidad-car">
+                    <span><i class="fa-solid fa-minus"></i></span>
+                    <p id="cantidad-producto">1</p>
+                    <span><i class="fa-solid fa-plus"></i></span>
+                </div>
+                
+              </div> 
+            </div>
+        </div>
+
+        <div id="contenedor-agg-tarjeta">
+            <p>Total: L.242.00</p>
+            <button id="boton-agg-tarjeta">Agregar Tarjeta</button>
+            <button id="boton-pago">Pago en Efectivo</button>
+        </div>
+
+        <footer id="menu">
+            <i id="" class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i id="icon-shopping-car" class="fa-solid fa-cart-shopping"></i>
+        </footer>
+
+
+
     </section>
     
     

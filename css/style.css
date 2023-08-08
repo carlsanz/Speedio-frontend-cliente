@@ -10,7 +10,7 @@ body {
 }
 
 #lading-page {
-    display: block; /*cambiar luego*/
+    display: none; /*cambiar luego*/
 }
 
 #contenedor-nombre-empresa {
@@ -70,13 +70,14 @@ body {
 }
 .informacion-empresa {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 0px;
+    align-items: baseline;
+    
+
 }
 
 .parrafo-info-empresa {
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-top: 0;
     
 }
 /* footer */
@@ -290,6 +291,66 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+/* CARRITO DE COMPRAS */
+#carrito-compras {
+    display: block;
+}
+
+#shooping-car-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+#car-icon {
+    font-size: 1.8rem;
+    position: absolute;
+    right: 7%;
+    top: 1.4%;
+}
+#cantidad-car {
+    display: flex;
+    align-items: baseline;
+}
+
+#cantidad-producto {
+    font-size: 2rem;
+    margin: 0 15px 0 15px;
+}
+
+#contenedor-agg-tarjeta {
+    background-color: #ffffff;
+    border: 2px solid #0B3A56;
+    border-radius: 5px;
+    margin: 10px 15px 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#boton-agg-tarjeta {
+   width: 250px;
+   height: 35px;
+   border-radius: 5px;
+   background-color: #FFE226;
+   border: 2px solid #0B3A56;
+   margin: 10px 0 20px 0;
+   color: #0B3A56;
+   font-size: 1rem;
+   font-weight: 900;
+}
+#boton-pago {
+    width: 250px;
+   height: 35px;
+   border-radius: 5px;
+   background-color: #C6382C;
+   border: 2px solid #0B3A56;
+   margin: 10px 0 20px 0;
+   color: #ffffff;
+   font-size: 1rem;
+   font-weight: 900;
 }
 
 

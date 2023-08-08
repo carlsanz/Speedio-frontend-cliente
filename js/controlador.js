@@ -268,6 +268,7 @@ function ingreso() {
     document.getElementById("restaurantes").style.display="block"
     document.getElementById("registrarte").style.display="none"
     document.getElementById("restaurante-individual").style.display="none";
+    document.getElementById("carrito-compras").style.display="none";
 
    for (let i = 0; i < restaurantes.length; i++) {
     document.getElementById("contenedor-restaurantes").innerHTML += 
@@ -285,59 +286,64 @@ function ingreso() {
 
 //funcion Generar Registro
 function registro() {
+ 
   document.getElementById("lading-page").style.display="none"
   document.getElementById("inicio-sesión").style.display="none"
   document.getElementById("restaurantes").style.display="none"
   document.getElementById("registrarte").style.display="block"
   document.getElementById("restaurante-individual").style.display="none";
+  document.getElementById("carrito-compras").style.display="none";
 
 
 }
 
 
 function restauranteIndividual(element) {
-const indice = restaurantes.findIndex((restaurante) => restaurante.nombre === element.id);
-document.getElementById("contenedor-menus").innerHTML =""; 
-document.getElementById("contenedor-banner").innerHTML = "";
+  const indice = restaurantes.findIndex((restaurante) => restaurante.nombre === element.id);
+    document.getElementById("contenedor-menus").innerHTML =""; 
+    document.getElementById("contenedor-banner").innerHTML = "";
 
-  document.getElementById("lading-page").style.display="none";
-  document.getElementById("inicio-sesión").style.display="none";
-  document.getElementById("restaurantes").style.display="none";
-  document.getElementById("registrarte").style.display="none";
-  document.getElementById("restaurante-individual").style.display="block";
+    document.getElementById("lading-page").style.display="none";
+    document.getElementById("inicio-sesión").style.display="none";
+    document.getElementById("restaurantes").style.display="none";
+    document.getElementById("registrarte").style.display="none";
+    document.getElementById("restaurante-individual").style.display="block";
+    document.getElementById("carrito-compras").style.display="none";
 
-  document.getElementById("contenedor-banner").innerHTML = 
-  `<img style="margin: 10px 10px 10px 10px; width: 100%;" src="${restaurantes[indice].banner}" alt="">`;
 
- 
+    document.getElementById("contenedor-banner").innerHTML = 
+      `<img style="margin: 10px 10px 10px 10px; width: 100%;" src="${restaurantes[indice].banner}" alt="">`;
 
   for (let i = 0; i< restaurantes[indice].menu.length; i++) {
     document.getElementById("contenedor-menus").innerHTML += 
     ` <div id="menu-individual">
-    <div id="contenedor-imagen-menu">
-       <img src="${restaurantes[indice].menu[i].img}" alt="">
-   </div>
-   <div id="contenedor-productos-individuales">
-       <p id="nombre-producto">${restaurantes[indice].menu[i].nombre_plato}</p>
-       <p id="descripcion-producto">${restaurantes[indice].menu[i].nombre_plato}</p>
-       <p id="precio-producto">Precio: L.${restaurantes[indice].menu[i].precio}</p>
-       <button id="boton-producto">Añadir al carrito</button>
-   </div> 
-</div>`;  
-
-      }
-
-    
-
-
-  
-
-
+          <div id="contenedor-imagen-menu">
+            <img src="${restaurantes[indice].menu[i].img}" alt="">
+          </div>
+        <div id="contenedor-productos-individuales">
+          <p id="nombre-producto">${restaurantes[indice].menu[i].nombre_plato}</p>
+          <p id="descripcion-producto">${restaurantes[indice].menu[i].nombre_plato}</p>
+          <p id="precio-producto">Precio: L.${restaurantes[indice].menu[i].precio}</p>
+          <button id="boton-producto">Añadir al carrito</button>
+        </div> 
+      </div>`;  
+  }
 }
 
 
+function carShopping(){
+  
 
+  document.getElementById("icon-shopping-car").style.color="#C6382C";
 
+    document.getElementById("lading-page").style.display="none";
+    document.getElementById("inicio-sesión").style.display="none";
+    document.getElementById("restaurantes").style.display="none";
+    document.getElementById("registrarte").style.display="none";
+    document.getElementById("restaurante-individual").style.display="none";
+    document.getElementById("carrito-compras").style.display="block";
+
+}
 
     function validarFormulario() {
         const emailInput = document.getElementById('email');
@@ -363,7 +369,7 @@ document.getElementById("contenedor-banner").innerHTML = "";
           ingreso()
         }
 
-      }
+    }
 
 
     
