@@ -294,7 +294,7 @@ body {
 }
 /* CARRITO DE COMPRAS */
 #carrito-compras {
-    display: block;
+    display: none;
 }
 
 #shooping-car-name {
@@ -343,7 +343,7 @@ body {
 }
 #boton-pago {
     width: 250px;
-   height: 35px;
+   height: 40px;
    border-radius: 5px;
    background-color: #C6382C;
    border: 2px solid #0B3A56;
@@ -353,6 +353,97 @@ body {
    font-weight: 900;
 }
 
+/* TARJETA DE CREDITO */
+#credit-card {
+    display: none;
+}
 
+#credit-icon {
+    font-size: 2.2rem;
+    position: absolute;
+    right: 8%;
+    top: 3.4%;
+    color: #0B3A56;
+}
 
+#container-credit-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #0B3A56;
+    margin: 35px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inf-credit-card {
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid #0B3A56;
+    margin-top: 5px;
+}
+
+#contenedor-expiracion {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.expiracion-tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* AGREGAR DIRECCION */
+#direccion {
+    display: none;
+
+}
+#location {
+    font-size: 2.2rem;
+    position: absolute;
+    right: 10%;
+    top: 0.2%;
+    color: #0B3A56;
+}
   
+#container-map {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    margin: 30px 10px 10px 10px;
+    padding: 35px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #0B3A56;
+}
+
+/* MIS PEDIDOS */
+#pedidos {
+    display: block;
+}
+
+#container-pedidos {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 15px 10px 15px;
+    border: 2px solid #0B3A56;
+}
+
+#estado-pedido {
+    display: flex;
+    justify-content: space-between;
+}
+
+#basket {
+    font-size: 2.2rem;
+    position: absolute;
+    right: 8%;
+    top: 0.3%;
+    color: #0B3A56;
+}
