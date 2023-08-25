@@ -10,7 +10,7 @@ body {
 }
 
 #lading-page {
-    display: none; /*cambiar luego*/
+    display: block; /*cambiar luego*/
 }
 
 #contenedor-nombre-empresa {
@@ -422,7 +422,7 @@ body {
 
 /* MIS PEDIDOS */
 #pedidos {
-    display: block;
+    display: none;
 }
 
 #container-pedidos {

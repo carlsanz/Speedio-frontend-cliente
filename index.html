@@ -72,7 +72,7 @@
             <input id="email" class="input-inicio-sesion" type="text">
             <h6 style="margin-top: 15px;" class="informacion-inicio-sesion">Contraseña</h6>
             <input id="contrasena" class="input-inicio-sesion" type="password">
-            <button id="boton-inicio-sesion" onclick="validarFormulario()">Ingresar</button>
+            <button id="boton-inicio-sesion" >Ingresar</button>
 
             <div id="contenerdor-no-cuenta">
                 <a id="no-cuenta" onclick="registro()">¿No tienes Cuenta?</a>
@@ -97,24 +97,24 @@
 
         <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 50px;">
             <h6 style="margin-top: 0px;" class="informacion-inicio-sesion">Nombres</h6>
-            <input class="input-inicio-sesion" type="text">
+            <input id="nombre-usuario" class="input-inicio-sesion" type="text">
 
             <h6 style="margin-top: 15px;" class="informacion-inicio-sesion">Apellidos</h6>
-            <input class="input-inicio-sesion" type="password">
+            <input id="apellido-usuario" class="input-inicio-sesion" type="text">
 
             <h6 style="margin-top: 15px;" class="informacion-inicio-sesion">Teléfono</h6>
-            <input class="input-inicio-sesion" type="password">
+            <input id="telefono-usuario" class="input-inicio-sesion" type="text">
 
             <h6 style="margin-top: 15px;" class="informacion-inicio-sesion">Correo Electrónico</h6>
-            <input class="input-inicio-sesion" type="password">
+            <input id="email-usuario" class="input-inicio-sesion" type="text">
 
             <h6 style="margin-top: 15px;" class="informacion-inicio-sesion">Contraseña</h6>
-            <input class="input-inicio-sesion" type="password">
+            <input id="contrasena-usuario" class="input-inicio-sesion" type="password">
 
             <h6 style="margin-top: 15px;" class="informacion-inicio-sesion">Repita Contraseña</h6>
             <input class="input-inicio-sesion" type="password">
 
-            <button id="boton-inicio-sesion" onclick="landingPage()">Registrarme</button>
+            <button id="boton-inicio-sesion" onclick="agregarNuevoUsuario()">Registrarme</button>
         </div>
 
         <footer id="footer">
@@ -202,8 +202,8 @@
 
         <div id="contenedor-agg-tarjeta">
             <p>Total: L.242.00</p>
-            <button id="boton-agg-tarjeta">Agregar Tarjeta</button>
-            <button id="boton-pago">Pago en Efectivo</button>
+            <button id="boton-agg-tarjeta" onclick="agregarTarjeta()">Agregar Tarjeta</button>
+            <button id="boton-pago" onclick="agregarDireccion()">Pago en Efectivo</button>
         </div>
 
         <footer id="menu">
@@ -216,7 +216,7 @@
     <!-- Credit Card -->
     <section id="credit-card">
         <div id="contenedor-nombre-empresa">
-            <span><i class="icono-regreso fa-solid fa-angle-left" ></i></span>
+            <span><i class="icono-regreso fa-solid fa-angle-left" onclick="carShopping()"></i></span>
             <h1 id="shooping-car-name">Mis Tarjetas</h1>
             <span><i id="credit-icon" class="fa-regular fa-credit-card"></i></span>            
         </div>
@@ -241,7 +241,7 @@
                 </div> 
             </div>
 
-            <button id="boton-pago">Agregar Tarjeta</button>
+            <button id="boton-pago" onclick="agregarDireccion()">Agregar Tarjeta</button>
         </div>
 
         <footer id="menu">
@@ -254,15 +254,15 @@
     <!-- DIRECCION -->
     <section id="direccion">
         <div id="contenedor-nombre-empresa">
-            <span><i class="icono-regreso fa-solid fa-angle-left" ></i></span>
-            <h1 id="shooping-car-name">Mis Tarjetas</h1>
+            <span><i onclick="carShopping()" class="icono-regreso fa-solid fa-angle-left" ></i></span>
+            <h1 id="shooping-car-name">Dirección</h1>
             <span><i id="location" class="fa-solid fa-location-dot"></i></span>            
         </div>
         
         <div id="container-map">
             <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d61918.23561633446!2d-87.195648!3d14.0836864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2shn!4v1691560258176!5m2!1ses-419!2shn" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
-            <button style="margin-top: 40px;" id="boton-pago">Agregar Dirección</button>
+            <button style="margin-top: 40px;" id="boton-pago" onclick="estadoPedido()">Agregar Dirección</button>
         </div>
 
         <footer id="menu">
@@ -276,7 +276,7 @@
     <!-- Pedidos -->
     <section id="pedidos">
         <div id="contenedor-nombre-empresa">
-            <span><i class="icono-regreso fa-solid fa-angle-left" ></i></span>
+            <span><i onclick="agregarDireccion()" class="icono-regreso fa-solid fa-angle-left" ></i></span>
             <h1 id="shooping-car-name">Mis Pedidos</h1>
             <span><i id="basket" class="fa-solid fa-basket-shopping"></i></span>            
         </div>
